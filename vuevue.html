@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vue app</title>
+<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app" class="col-md-4">
+    <label>Фамилия</label>
+    <input type="text" v-model="name2" placeholder="Введите фамилию" class="form-control" /><br>
+    <label>Имя</label>
+    <input type="text" v-model="name1" placeholder="Введите имя" class="form-control" /><br>
+    <label>Отчество</label>
+    <input type="text" v-model="name3" placeholder="Введите " class="form-control" /><br>
+    <label>Дата рождения</label><br>
+    <input type="date" v-model="date" placeholder="Введите дату" class="form-control" /><br>
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            name2:'',
+            name1:'',
+            name3: '',
+            date: ''
+        }
+    });
+</script>
+</body>
+</html>
